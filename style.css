@@ -1,0 +1,154 @@
+ {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #1f1f1f; /* Fundo escuro para dar um tom mais intenso */
+  color: #fff;
+  box-sizing: border-box;
+}
+
+/* Cabeçalho com tema de luta */
+header {
+  background-color: #e60000; /* Vermelho forte, como sangue ou intensidade */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.5); /* Sombras para aumentar a sensação de "impacto" */
+}
+
+/* Estilo do botão de ação */
+button {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #d32f2f;
+  transform: scale(1.1); /* Efeito de aumentar o botão como se fosse um soco */
+}
+
+/* Estilo de um card de luta */
+.card {
+  background-color: #333;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Card se movendo para cima, simulando um ataque rápido */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card h2 {
+  font-size: 24px;
+  color: #f44336;
+  text-transform: uppercase;
+}
+
+/* Estilo para uma barra de energia (como a de um personagem de luta) */
+.energy-bar {
+  width: 100%;
+  background-color: #444;
+  border-radius: 10px;
+  height: 30px;
+  margin-top: 20px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.energy-bar .current-energy {
+  width: 70%; /* Simulando 70% de energia */
+  background-color: #ffeb3b; /* Amarelo, como se fosse uma barra de poder */
+  border-radius: 10px 0 0 10px;
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+/* Animações de luta para alguns elementos */
+@keyframes fight-impact {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.fight-animation {
+  animation: fight-impact 0.5s ease-in-out;
+}
+
+/* Estilo de texto com impacto */
+h1, h2, h3 {
+  font-family: 'Impact', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+/* Texto de introdução do tema de luta */
+.introduction {
+  font-size: 18px;
+  margin-top: 20px;
+  line-height: 1.6;
+  color: #ccc;
+  text-align: center;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+/* Estilos para a área de combate ou título de uma luta */
+.fight-title {
+  background-color: #000;
+  padding: 10px;
+  color: #f44336;
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.fight-title span {
+  text-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+}
+
+/* Estilo de personagens ou lutadores */
+.character {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.character img {
+  border: 5px solid #fff;
+  border-radius: 50%;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.character h3 {
+  color: #f44336;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}
